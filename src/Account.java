@@ -2,7 +2,6 @@ public class Account {
 
     private double balance;//Account klassen ska ha en balance där kontots saldo sparas
     private String name;
-
     private static int count = 0; //set counter
 
     //Två konstruktörer.  en som sätter balance till 0 och en som tar in en balance.
@@ -48,7 +47,9 @@ public class Account {
         this.count++;
     }
     //en metod toString som returnerar en sträng innehållandes en mening med name och balance på lämplig form.
-
+    public double getBalance() {
+        return this.balance;
+    }
 
 }
 
